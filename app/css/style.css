@@ -2278,6 +2278,20 @@ footer .copyright {
   top: 23%;
 }
 
+    .swiper-container .bg {
+        height : 200%;
+    }  
+    
+    .info {
+        bottom: -2px;
+    }
+    
+}
+
+@media only screen and  (max-width: 773px) {
+    .slider-left {
+        height: 70%;
+    }
 }
 
 @media only screen and  (max-width: 768px) {
@@ -2331,6 +2345,12 @@ footer .copyright {
 
 
 
+}
+
+@media only screen and  (max-width: 736px) {
+    .slider-left {
+        height: 70%;
+    }
 }
 
 @media only screen and  (max-width: 667px) {
@@ -2623,6 +2643,10 @@ footer .copyright {
 .comment.children {
   padding-left: 0;
 }
+    
+    .swiper-container .bg {
+        height : 160%;
+    }  
 
 }
 
