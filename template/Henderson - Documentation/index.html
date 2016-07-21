@@ -1,0 +1,297 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Template Documentation Template</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Henderson&rdquo; Documentation by &ldquo;MountainTheme&rdquo; v2.0</h3>
+		
+		<hr>
+		
+		<div class="center"><img src="assets/images/logo.png" alt="Logo" /></div>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 01/03/2015<br>
+					By: MountainTheme<br>
+					Email: <a href="mailto:youremail@yourdomain.com">artsandsouls@gmail.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/MountainTheme?ref=MountainTheme">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol>
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#services">Services</a></li>
+			<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#googlemap">Google Map</a></li>
+			<li><a href="#bg">Slider or Video</a></li>
+			<li><a href="#contactform">Contact Form</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>1) HTML Structure</strong> - <a href="#toc">top</a></h3>
+		<p>This theme is a fixed layout with two columns. All of the information within the main content area is nested within a div with an id of "primaryContent". The sidebar's (column #2) content is within a div with an id of "secondaryContent". The general template structure is the same throughout the template. Here is the general structure.</p>
+		
+		<img src="assets/images/htmlstructure.png" alt="HTML Structure" />
+		
+		<p>If you would like to edit the color, font, or style of any elements in one of these columns, you would do the following:</p>
+
+<pre>	#primaryContent a {
+		color: #someColor;
+	} 
+</pre>
+
+		<p>If you find that your new style is not overriding, it is most likely because of a specificity problem. Scroll down in your CSS file and make sure that there isn't a similar style that has more weight.</p>
+
+		<p>I.E.</p>
+
+<pre>	#wrap #primaryContent a {
+		color: #someColor;
+	}
+</pre>
+
+		<p>So, to ensure that your new styles are applied, make sure that they carry enough "weight" and that there isn't a style lower in the CSS file that is being applied after yours.</p> 
+
+		<hr>
+
+		<h3 id="cssFiles"><strong>2) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+
+		<p>I'm using two CSS files in this theme. The first one is a generic reset file. Many browser interpret the default behavior of html elements differently. By using a general reset CSS file, we can work round this. This file also contains some general styling, such as anchor tag colors, font-sizes, etc. Keep in mind, that these values might be overridden somewhere else in the file.</p> 
+
+		<p>The second file contains all of the specific stylings for the page. The file is separated into sections using:</p>  
+
+<pre>	
+
+/* ================================= */
+/* :::::::::: 1. General ::::::::::: */
+/* ================================= */
+
+	some code
+
+/* ================================= */
+/* :::::::::: 2. Slider :::::::::::: */
+/* ================================= */
+	
+	some code
+	
+/* ================================= */
+/* ::::::::::: 3. Profile :::::::::: */
+/* ================================= */
+	
+	some code
+	
+/* ================================= */
+/* ::::::::::: 4. Resume ::::::::::: */
+/* ================================= */
+	
+	some code
+
+/* ================================= */
+/* :::::::: 5. Portfolio ::::::::::: */
+/* ================================= */
+	
+	some code
+
+/* ================================= */
+/* :::::::::::: 6. Blog :::::::::::: */
+/* ================================= */
+	
+	some code
+
+/* ================================= */
+/* :::::::::::: 7. Contact ::::::::: */
+/* ================================= */
+	
+	some code
+
+/* ================================= */
+/* ::::::::: 8. Google map ::::::::: */
+/* ================================= */
+	
+	some code
+
+/* ================================= */
+/* :::::::::: 9. Footer :::::::::::: */
+/* ================================= */
+	
+	some code
+
+/* ================================= */
+/* :::::: 10. Responsive CSS ::::::: */
+/* ================================= */
+	
+	some code
+
+</pre>
+		
+		<p>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p> 
+
+		<p>Any images that are placed within the services section have 5px worth of padding and a light bluish background. If you would like to edit the display of these images, find the following section in the style sheet:</p>
+
+<pre>	.logo  img {
+		change styles here:
+	}
+</pre>
+
+		<hr>
+
+		<h3 id="services"><strong>3) WHAT CAN I DO in section Resume</strong> - <a href="#toc">top</a></h3>
+		<p>To change the icon (from the Font Awesome collection http://fortawesome.github.io/Font-Awesome/icons/), look for a line of HTML like this:</p>
+
+<code><p>&lt;i class=&quot;fa fa-desktop fa-fw&quot; /&gt;&lt;/i&gt;</p></code>
+
+<p>To change the icon, choose one from the list of Font Awesome Icons and get the CSS class for that icon (usually with the fa- prefix e.g. fa-rocket), and use this CSS code in the tags to use that icon instead</p>
+
+<code><p>&lt;i class=&quot;fa YOUR-FONT-AWESOME-ICON-CLASS fa-fw&quot; /&gt;&lt;/i&gt;</p> </code>
+
+		<hr>
+
+		<h3 id="portfolio"><strong>4) Portfolio</strong> - <a href="#toc">top</a></h3>
+		
+		<p>1. To change photo in Portfolio section you need to open index.html and find Portfolio section</p>
+ 
+		<p>This is code item </p>
+  		<p>&lt;div class=&quot;element-item illustration&quot;&gt;</p>
+                    <p>&lt;figure&gt;
+                    <p>&lt;a title=&quot;Photography&quot; href=&quot;images/portfolio/1.jpg&quot; data-lightbox-gallery=&quot;gallery1&quot; class=&quot;nivo-lbox&quot;&gt;</p>
+                    <p>&lt;img src=&quot;images/portfolio/1.jpg&quot; alt=&quot;Screenshot 01&quot;&gt;</p>
+                    <p>&lt;figcaption&gt;</p>
+                    <p>&lt;div class=&quot;caption-content&quot;&gt;</p>
+                        <p>&lt;p&gt;Photography&lt;/p&gt;</p>
+                    <p>&lt;/div&gt;</p>
+                    <p>&lt;/figcaption&gt;</p>
+                    <p>&lt;/a&gt;</p>
+                    <p>&lt;/figure&gt;</p>
+                 <p>&lt;/div&gt;</p>
+
+	<p>2. Buttons category works</p>
+	<p>&lt;button class=&quot;button is-checked&quot; data-filter=&quot;*&quot;&gt;&lt;i class=&quot;fa fa-th&quot;&gt;&lt;/i&gt;All&lt;/button&gt;</p>
+     <p> &lt;button class=&quot;button&quot; data-filter=&quot;.web&quot;&gt;Web-Design&lt;/button&gt;</p>
+     <p> &lt;button class=&quot;button&quot; data-filter=&quot;.photoghraphy&quot;&gt;Photoghraphy&lt;/button&gt;</p>
+     <p> &lt;button class=&quot;button&quot; data-filter=&quot;.illustration&quot;&gt;Ilustration&lt;/button&gt;</p>
+     <p> &lt;button class=&quot;button&quot; data-filter=&quot;.minimalism&quot;&gt;Minimalism&lt;/button&gt;</p>
+
+		<hr>
+
+		<h3 id="googlemap"><strong>5) Google Map</strong> - <a href="#toc">top</a></h3>
+		
+		<p>1. To change information in Google map you need to open main.js and find Google Map section coordinate variables and change the coordinates </p>
+ 
+		<p>var latitude = -37.8602828,</p>
+  		<p>longitude = 145.079616, 9</p>
+	   <p> 2. To change the contact details in a modal window, you need to find the code in the file main.js</p>
+	   <p>var contentString = '&lt;div class=&quot;contact-box left&quot;&gt;'+</p>
+      <p>'&lt;h3&gt;CONTACT INFORMATION.&lt;/h3&gt;'+</p>
+         <p>'&lt;ul&gt;'+</p>
+       <p>'&lt;li&gt;&lt;i class=&quot;fa fa-fw fa-map-marker&quot;&gt;&lt;/i&gt;Melbourne, Australia&lt;/li&gt;'+</p>
+       <p>'&lt;li&gt;&lt;i class=&quot;fa fa-fw fa-phone&quot;&gt;&lt;/i&gt;765-302-2878&lt;/li&gt;'+</p>
+       <p>'&lt;li&gt;&lt;i class=&quot;fa fa-fw fa-envelope-o&quot;&gt;&lt;/i&gt;&lt;a href=&quot;mailto:&quot;&gt;name@domain.com&lt;/a&gt;&lt;/li&gt;'+</p>
+       <p>'&lt;li&gt;&lt;i class=&quot;fa fa-fw fa-globe&quot;&gt;&lt;/i&gt;&lt;a href=&quot;&quot;&gt;mycompanyname.com&lt;/a&gt;&lt;/li&gt;'+</p>
+       <p>'&lt;/ul&gt;'+</p>
+      <p>'&lt;/div&gt;';</p>
+		<hr>
+
+	
+<h3 id="bg"><strong>6) Photo Slider or Youtube Video</strong> - <a href="#toc">top</a></h3>
+	
+	<h4><b>Background image </b></h4>
+
+	<p>Background image code looks like this:
+				<pre>
+&lt;div class=&quot;bg&quot; style=&quot;background-image:url(images/slider/background2.jpg)&quot;&gt;&lt;/div&gt;
+
+</pre>
+			</p>	
+
+<h4><b>Youtube Video </b></h4>
+<p>Can’t work on mobile devices due to restrictions from YouTube and restrictions placed on content by the devices themselves. But the slider will be visible with your photo and signature.</p>
+	<p>Video code looks like this:
+				<pre>
+&lt;div id=&quot;video&quot; data-video=&quot;b55GNNbyjmg&quot; data-mute=&quot;true&quot;&gt;&lt;/div&gt;
+
+data-video=&quot;b55GNNbyjmg&quot;  -  Link your Video in Youtube
+
+data-mute=&quot;true&quot  -  Mute true/false
+
+
+
+You can change position video iframe in file style.css Section 
+
+/* ================================= */
+/* :::::::::: 2. Slider :::::::::::: */
+/* ================================= */
+
+.slider-left #video iframe {
+  position: relative;
+  left: -85%!important;   -  Position video in parcent
+}
+
+</pre>
+			</p>	
+
+
+		<hr>
+
+		<h3 id="contactform"><strong>7) Contact Form</strong> - <a href="#toc">top</a></h3>
+		
+		<p>An email in the contact form in the file changes contact.php in folder php</p>
+		<p>variable $mail = mail("youremail@youremailaddress.com", $subject, $message</p>
+	
+		<hr>
+		
+		<h3 id="credits"><strong>8) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+		<p>I've used the following images, icons or other files as listed.
+		
+	<ul>
+					<li><a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a></li>
+					<li><a href="http://idangero.us/swiper/" target="_blank">Swiper Slider</a></li>
+					<li><a href="http://jqueryvalidation.org/" target="_blank">jQuery Validation Plugin</a></li>
+					<li><a href="http://www.google.com/fonts/specimen/Exo" target="_blank">Google Fonts - 'Exo'</a></li>
+					<li><a href="http://www.google.com/fonts/specimen/Raleway" target="_blank">Google Fonts - 'Raleway'</a></li>
+					<li><a href="http://unsplash.com" target="_blank">Images from Unsplash</a></li>
+				</ul>
+		
+		<hr>
+		
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>MountainTheme</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+
+		<!-- Javascript files -->
+    <!-- jQuery -->
+    <script src="assets/js/jquery.js"></script>
+     <!-- Smooth Scroll -->
+    <script src="assets/js/smooth-scroll.js"></script>
+</body>
+</html>
